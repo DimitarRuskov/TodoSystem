@@ -9,6 +9,5 @@ C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\bin\Debu
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
-C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\obj\Debug\TodoSystem.Models.csprojResolveAssemblyReference.cache
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\obj\Debug\TodoSystem.Models.dll
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Models\obj\Debug\TodoSystem.Models.pdb

@@ -14,3 +14,5 @@ C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\bin\Debug\
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\obj\Debug\TodoSystem.Data.csprojResolveAssemblyReference.cache
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\obj\Debug\TodoSystem.Data.dll
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\obj\Debug\TodoSystem.Data.pdb
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\obj\Debug\TodoSystem.Data.Migrations.InitialCreate.resources
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Data\obj\Debug\TodoSystem.Data.csproj.GenerateResource.Cache
