@@ -58,7 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Comment.cs" />
-    <Compile Include="Task.cs" />
+    <Compile Include="IssueTask.cs" />
     <Compile Include="User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

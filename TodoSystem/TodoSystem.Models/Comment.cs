@@ -24,6 +24,6 @@ namespace TodoSystem.Models
         [Required]
         public int TaskId { get; set; }
 
-        public virtual Task Task { get; set; }
+        public virtual IssueTask Task { get; set; }
     }
 }

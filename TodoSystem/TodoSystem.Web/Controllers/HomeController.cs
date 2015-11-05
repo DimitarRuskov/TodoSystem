@@ -1,13 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
+using TodoSystem.Data;
 
 namespace TodoSystem.Web.Controllers
 {
-    public class HomeController : Controller
+    public abstract class HomeController : BaseController
     {
+
+        //public  HomeController(ApplicationDbContext data) : base(data)
+        //{
+            
+        //}
+
         public ActionResult Index()
         {
             return View();

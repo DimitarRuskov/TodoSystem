@@ -71,3 +71,10 @@ C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Microso
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\obj\Debug\TodoSystem.Web.dll
 C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\obj\Debug\TodoSystem.Web.pdb
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.Web.Common.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.Web.Mvc.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\WebActivatorEx.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.Web.Common.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\TodoSystem\TodoSystem.Web\bin\Ninject.Web.Mvc.xml

@@ -8,12 +8,12 @@
 
     public class User : IdentityUser
     {
-        private ICollection<Task> tasks;
+        private ICollection<IssueTask> tasks;
         private ICollection<Comment> comments;
 
         public User()
         {
-            this.tasks = new HashSet<Task>();
+            this.tasks = new HashSet<IssueTask>();
             this.comments = new HashSet<Comment>();
         }
 
@@ -25,7 +25,7 @@
             return userIdentity;
         }
 
-        public ICollection<Task> Tasks
+        public ICollection<IssueTask> Tasks
         {
             get { return this.tasks; }
             set { this.tasks = value; }

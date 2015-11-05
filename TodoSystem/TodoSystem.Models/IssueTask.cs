@@ -1,13 +1,14 @@
 ﻿namespace TodoSystem.Models
 {
+    using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    public class Task
+    public class IssueTask
     {
         private ICollection<Comment> comments;
 
-        public Task()
+        public IssueTask()
         {
             this.comments = new HashSet<Comment>();
         }
@@ -43,5 +44,9 @@
             get { return this.comments; }
             set { this.comments = value; }
         }
+        //Add Date Created and Date Modified to Task
+        public DateTime DateCreated { get; set; }
+
+        public DateTime DateModified { get; set; }
     }
 }
