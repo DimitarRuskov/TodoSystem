@@ -1,0 +1,10 @@
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\obj\Debug\Bookmarks.Common.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\obj\Debug\Bookmarks.Common.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\Bookmarks.Common.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\Bookmarks.Common.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\AutoMapper.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\AutoMapper.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\AutoMapper.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Common\obj\Debug\Issues.Common.csprojResolveAssemblyReference.cache

@@ -1,0 +1,14 @@
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Bookmarks.Models.dll.config
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Bookmarks.Models.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Bookmarks.Models.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\obj\Debug\Bookmarks.Models.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\obj\Debug\Bookmarks.Models.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\Bookmarks\Bookmarks.Models\obj\Debug\Issues.Models.csprojResolveAssemblyReference.cache
