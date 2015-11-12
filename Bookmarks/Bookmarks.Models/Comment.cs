@@ -11,11 +11,11 @@ namespace Issues.Models
         [Required]
         public string Content { get; set; }
 
-        [ForeignKey("User")]
+        //[ForeignKey("User")]
         public string UserId { get; set; }
         public virtual User User { get; set; }
 
-        [ForeignKey("Issue")]
+        //[ForeignKey("Issue")]
         public int IssueId { get; set; }
         public virtual Issue Issue{ get; set; }
     }

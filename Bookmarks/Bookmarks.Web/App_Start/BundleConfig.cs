@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Optimization;
 
-namespace Bookmarks.Web
+namespace Issues.Web
 {
     public class BundleConfig
     {

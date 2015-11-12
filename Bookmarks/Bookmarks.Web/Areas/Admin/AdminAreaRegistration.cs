@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Bookmarks.Web.Areas.Admin
+namespace Issues.Web.Areas.Admin
 {
     public class AdminAreaRegistration : AreaRegistration 
     {

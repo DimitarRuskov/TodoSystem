@@ -9,6 +9,11 @@
 
     public class User : IdentityUser
     {
+        
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
+        public bool IsAdmin { get; set; }
+
         private ICollection<Issue> createdIssues;
         private ICollection<Issue> assignedIssues;
 

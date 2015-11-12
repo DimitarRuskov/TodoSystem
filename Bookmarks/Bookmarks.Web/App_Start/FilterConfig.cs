@@ -1,7 +1,7 @@
 ﻿using System.Web;
 using System.Web.Mvc;
 
-namespace Bookmarks.Web
+namespace Issues.Web
 {
     public class FilterConfig
     {
