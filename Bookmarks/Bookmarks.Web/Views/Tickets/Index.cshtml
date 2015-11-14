@@ -7,16 +7,10 @@
 <h2>Index</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Assign new Issue", "Create")
 </p>
 <table class="table">
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.AssignedTo.FirstName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CreatedBy.FirstName)
-        </th>
         <th>
             @Html.DisplayNameFor(model => model.Title)
         </th>
@@ -40,12 +34,6 @@
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.AssignedTo.FirstName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.CreatedBy.FirstName)
-        </td>
         <td>
             @Html.DisplayFor(modelItem => item.Title)
         </td>

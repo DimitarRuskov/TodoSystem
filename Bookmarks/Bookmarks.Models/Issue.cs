@@ -21,7 +21,7 @@
         [Required]
         public string Title { get; set; }
 
-        [Display(Name = "Spend Time")]
+        [Display(Name = "Assessment")]
         public double Time { get; set; }
 
         //TODO: validate users
@@ -34,26 +34,26 @@
         public virtual User CreatedBy { get; set; }
 
         [ForeignKey("AssignedTo")]
-        [Display(Name = "Assigned To")]
+        [Display(Name = "Assignee")]
         public string AssignedToId { get; set; }
 
-        [Display(Name = "Assigned To")]
+        [Display(Name = "Assignee")]
         public virtual User AssignedTo { get; set; }
 
         [Required]
         public string Description { get; set; }
 
         [Required]
-        [Display(Name = "Ticket Status")]
+        [Display(Name = "Status")]
         public string Status { get; set; }
 
         //[DefaultValue(PriorityType.Open)]
         //public PriorityType Status { get; set; }
 
-        [Display(Name = "Created Date")]
+        [Display(Name = "Created At")]
         public DateTime CreatedAt { get; set; }
 
-        [Display(Name = "Updated Date")]
+        [Display(Name = "Updated At")]
         public DateTime? UpdatedAt { get; set; }
 
         public virtual ICollection<Comment> Comments
