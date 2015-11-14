@@ -23,5 +23,7 @@
         public IDbSet<Issue> Issues { get; set; }
 
         public IDbSet<Comment> Comments { get; set; }
+
+        public System.Data.Entity.DbSet<Issues.Models.WorkTime> WorkTimes { get; set; }
     }
 }

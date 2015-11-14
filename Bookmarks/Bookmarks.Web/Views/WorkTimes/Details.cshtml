@@ -1,0 +1,50 @@
+﻿@model Issues.Models.WorkTime
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>WorkTime</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IssueID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IssueID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LoggedHours)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LoggedHours)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateLogged)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateLogged)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
