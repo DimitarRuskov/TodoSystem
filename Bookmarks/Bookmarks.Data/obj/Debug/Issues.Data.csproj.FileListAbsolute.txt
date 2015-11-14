@@ -62,3 +62,19 @@ C:\Users\georg\Desktop\Project ASP.NET MVC\Bookmarks\Bookmarks.Data\bin\Debug\Mi
 C:\Users\georg\Desktop\Project ASP.NET MVC\Bookmarks\Bookmarks.Data\obj\Debug\Issues.Data.csprojResolveAssemblyReference.cache
 C:\Users\georg\Desktop\Project ASP.NET MVC\Bookmarks\Bookmarks.Data\obj\Debug\Bookmarks.Data.dll
 C:\Users\georg\Desktop\Project ASP.NET MVC\Bookmarks\Bookmarks.Data\obj\Debug\Bookmarks.Data.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Bookmarks.Data.dll.config
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Bookmarks.Data.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Bookmarks.Data.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Bookmarks.Models.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Bookmarks.Models.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\obj\Debug\Issues.Data.csprojResolveAssemblyReference.cache
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\obj\Debug\Bookmarks.Data.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Bookmarks\Bookmarks.Data\obj\Debug\Bookmarks.Data.pdb

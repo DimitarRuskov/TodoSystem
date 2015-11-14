@@ -8,6 +8,7 @@ using System.Web;
 using System.Web.Mvc;
 using Issues.Data;
 using Issues.Models;
+using Microsoft.AspNet.Identity;
 
 namespace Bookmarks.Web.Controllers
 {
@@ -40,8 +41,7 @@ namespace Bookmarks.Web.Controllers
         // GET: Tickets/Create
         public ActionResult Create()
         {
-            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "FirstName");
-            ViewBag.CreatedById = new SelectList(db.Users, "Id", "FirstName");
+            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "UserName");
             return View();
         }
 
@@ -52,6 +52,8 @@ namespace Bookmarks.Web.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "Id,Title,Time,CreatedById,AssignedToId,Description,Status,CreatedAt,UpdatedAt")] Issue issue)
         {
+            issue.CreatedAt = DateTime.Now;
+            issue.CreatedById = User.Identity.GetUserId();
             if (ModelState.IsValid)
             {
                 db.Issues.Add(issue);
@@ -59,8 +61,7 @@ namespace Bookmarks.Web.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "FirstName", issue.AssignedToId);
-            ViewBag.CreatedById = new SelectList(db.Users, "Id", "FirstName", issue.CreatedById);
+            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "UserName", issue.AssignedToId);
             return View(issue);
         }
 
@@ -76,8 +77,8 @@ namespace Bookmarks.Web.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "FirstName", issue.AssignedToId);
-            ViewBag.CreatedById = new SelectList(db.Users, "Id", "FirstName", issue.CreatedById);
+            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "UserName", issue.AssignedToId);
+            ViewBag.CreatedById = new SelectList(db.Users, "Id", "UserName", issue.CreatedById);
             return View(issue);
         }
 
@@ -94,8 +95,8 @@ namespace Bookmarks.Web.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "FirstName", issue.AssignedToId);
-            ViewBag.CreatedById = new SelectList(db.Users, "Id", "FirstName", issue.CreatedById);
+            ViewBag.AssignedToId = new SelectList(db.Users, "Id", "UserName", issue.AssignedToId);
+            ViewBag.CreatedById = new SelectList(db.Users, "Id", "UserName", issue.CreatedById);
             return View(issue);
         }
 
