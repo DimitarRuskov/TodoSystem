@@ -14,8 +14,6 @@
         public string FirstName { get; set; }
         [Display(Name = "Last Name")]
         public string LastName { get; set; }
-        [Display(Name = "Admin Status")]
-        public bool IsAdmin { get; set; }
 
         private ICollection<Issue> createdIssues;
         private ICollection<Issue> assignedIssues;

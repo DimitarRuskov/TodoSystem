@@ -13,6 +13,7 @@ using Issues.Web.Models;
 namespace Issues.Web.Controllers
 {
     using Issues.Models;
+    using System.Web.Security;
 
     [Authorize]
     public class AccountController : Controller
@@ -154,8 +155,10 @@ namespace Issues.Web.Controllers
         {
             if (ModelState.IsValid)
             {
-                //var user = new User { UserName = model.Email, Email = model.Email };
-                var user = new User { UserName = model.UserName, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName };
+                var user = new User { UserName = model.UserName, Email = model.Email, FirstName = model.FirstName, LastName = model.LastName};
+                if (!Roles.RoleExists("Admin"))
+                    Roles.CreateRole("Admin");
+                Roles.AddUserToRole(model.UserName, "Admin");
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
