@@ -22,10 +22,7 @@
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    
-                    @*<li>@Html.ActionLink("Comments", "Index", "Comments")</li>
-                    <li>@Html.ActionLink("WorkTimes", "Index", "WorkTimes")</li>*@
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>                
 
                     @if (this.User.Identity.IsAuthenticated)
                     {
@@ -34,6 +31,11 @@
                     @if (this.User.IsInRole("Admin"))
                     {
                         <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                    }
+                    @if (this.User.Identity.IsAuthenticated)
+                    {
+                        <li>@Html.ActionLink("Log time", "Create", "WorkTimes")</li>
+                        <li>@Html.ActionLink("Spent time", "Index", "WorkTimes")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")

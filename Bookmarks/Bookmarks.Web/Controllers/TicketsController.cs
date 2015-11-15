@@ -91,6 +91,7 @@ namespace Bookmarks.Web.Controllers
         {
             if (ModelState.IsValid)
             {
+                issue.UpdatedAt = DateTime.Now;
                 db.Entry(issue).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");

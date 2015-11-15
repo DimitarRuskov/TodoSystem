@@ -162,7 +162,8 @@ namespace Issues.Web.Controllers
                 {
                     if (!Roles.RoleExists("Admin"))
                         Roles.CreateRole("Admin");
-                    Roles.AddUserToRole(model.UserName, "Admin");
+                    if(!Roles.IsUserInRole(model.UserName, "Admin"))
+                        Roles.AddUserToRole(model.UserName, "Admin");
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                    
                     return RedirectToAction("Index", "Home");

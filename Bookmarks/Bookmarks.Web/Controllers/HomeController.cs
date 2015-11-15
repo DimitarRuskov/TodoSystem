@@ -8,6 +8,7 @@
     using Issues.Data;
     using Issues.Web.Infrastructure.CacheService;
     using Issues.Web.ViewModels;
+    using Microsoft.AspNet.Identity;
 
     public class HomeController : BaseController
     {
@@ -21,8 +22,15 @@
 
         public ActionResult Index()
         {
-            var viewModel = new HomeViewModel { Issues = this.cacheService.Issues };
-            return View(viewModel);
+            if(this.User.Identity.IsAuthenticated)
+            {
+                var userId = this.User.Identity.GetUserId();
+                var createdIssues = this.Data.Issues.All().Where(i => i.CreatedById == userId).AsEnumerable();
+                var assignedIssues = this.Data.Issues.All().Where(i => i.AssignedToId == userId).AsEnumerable();
+                var viewModel = new HomeViewModel { CreatedIssues = createdIssues, AssignedIssues = assignedIssues };
+                return View(viewModel);
+            }
+            return View();
         }
 
         public ActionResult About()

@@ -1,23 +1,28 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Issues.Models
 {
     public class WorkTime
     {
-        [Display(Name = "ID")]
-        public int ID { get; set; }
-        [Display(Name = "User ID")]
-        public int UserID { get; set; }
-        [Display(Name = "Issue ID")]
-        public int IssueID { get; set; }
-        [Display(Name = "Work Hours")]
-        public double LoggedHours { get; set; }
-        [Display(Name = "Work Days" )]
-        public DateTime DateLogged { get; set; }
+        [Key]
+        public int Id { get; set; }
+        
+        [ForeignKey("User")]
+        public string UserId { get; set; }
+
+        public virtual User User { get; set; }
+        
+        [ForeignKey("Issue")]
+        public int IssueId { get; set; }
+
+        public Issue Issue { get; set; }
+
+        [Required]
+        public double Time { get; set; }
+
+        [Required]
+        public DateTime CreatedAt { get; set; }
     }
 }

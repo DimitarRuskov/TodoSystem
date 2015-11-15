@@ -5,3 +5,102 @@
 }
 
 <h1>Welcome to <strong>Issue Tracker</strong></h1>
+
+@if (this.User.Identity.IsAuthenticated)
+{
+    <h3>Created Issues</h3>
+    <table class="table">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Assessment
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Created At
+            </th>
+            <th>
+                Updated At
+            </th>
+        </tr>
+
+        @foreach (var item in Model.CreatedIssues)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdatedAt)
+                </td>
+            </tr>
+        }
+    </table>
+    <hr />
+    <h3>Assigned Issues</h3>
+    <table class="table">
+        <tr>
+            <th>
+                Title
+            </th>
+            <th>
+                Assessment
+            </th>
+            <th>
+                Description
+            </th>
+            <th>
+                Status
+            </th>
+            <th>
+                Created At
+            </th>
+            <th>
+                Updated At
+            </th>
+        </tr>
+
+        @foreach (var item in Model.AssignedIssues)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Title)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Time)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Description)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CreatedAt)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UpdatedAt)
+                </td>
+            </tr>
+        }
+    </table>
+}

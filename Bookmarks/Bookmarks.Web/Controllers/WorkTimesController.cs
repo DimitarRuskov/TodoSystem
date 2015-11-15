@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Data.Entity;
+﻿using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
 using Issues.Data;
 using Issues.Models;
+using Microsoft.AspNet.Identity;
+using System;
 
-namespace Bookmarks.Web.Controllers
+namespace Issues.Web.Controllers
 {
     public class WorkTimesController : Controller
     {
@@ -18,7 +16,8 @@ namespace Bookmarks.Web.Controllers
         // GET: WorkTimes
         public ActionResult Index()
         {
-            return View(db.WorkTimes.ToList());
+            var userId = this.User.Identity.GetUserId();
+            return View(db.WorkTimes.Where(w => w.UserId == userId).ToList());
         }
 
         // GET: WorkTimes/Details/5
@@ -39,6 +38,7 @@ namespace Bookmarks.Web.Controllers
         // GET: WorkTimes/Create
         public ActionResult Create()
         {
+            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title");
             return View();
         }
 
@@ -47,15 +47,16 @@ namespace Bookmarks.Web.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,UserID,IssueID,LoggedHours,DateLogged")] WorkTime workTime)
+        public ActionResult Create([Bind(Include = "ID,UserId,IssueId,Time,CreatedAt")] WorkTime workTime)
         {
+            workTime.UserId = this.User.Identity.GetUserId();
             if (ModelState.IsValid)
             {
                 db.WorkTimes.Add(workTime);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-
+            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title", workTime.IssueId);
             return View(workTime);
         }
 
