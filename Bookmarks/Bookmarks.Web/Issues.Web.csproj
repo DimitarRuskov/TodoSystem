@@ -202,7 +202,7 @@
     <Compile Include="Controllers\CommentsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\TicketsController.cs" />
+    <Compile Include="Controllers\IssuesController.cs" />
     <Compile Include="Controllers\UsersController.cs" />
     <Compile Include="Controllers\WorkTimesController.cs" />
     <Compile Include="Global.asax.cs">
@@ -312,11 +312,11 @@
     <Content Include="Views\Users\Details.cshtml" />
     <Content Include="Views\Users\Edit.cshtml" />
     <Content Include="Views\Index.cshtml" />
-    <Content Include="Views\Tickets\Create.cshtml" />
-    <Content Include="Views\Tickets\Delete.cshtml" />
-    <Content Include="Views\Tickets\Details.cshtml" />
-    <Content Include="Views\Tickets\Edit.cshtml" />
-    <Content Include="Views\Tickets\Index.cshtml" />
+    <Content Include="Views\Issues\Create.cshtml" />
+    <Content Include="Views\Issues\Delete.cshtml" />
+    <Content Include="Views\Issues\Details.cshtml" />
+    <Content Include="Views\Issues\Edit.cshtml" />
+    <Content Include="Views\Issues\Index.cshtml" />
     <Content Include="Views\Comments\Create.cshtml" />
     <Content Include="Views\Comments\Delete.cshtml" />
     <Content Include="Views\Comments\Details.cshtml" />

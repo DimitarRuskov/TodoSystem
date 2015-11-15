@@ -12,7 +12,7 @@ using Microsoft.AspNet.Identity;
 
 namespace Bookmarks.Web.Controllers
 {
-    public class TicketsController : Controller
+    public class IssuesController : Controller
     {
         private IssuesDbContext db = new IssuesDbContext();
 
