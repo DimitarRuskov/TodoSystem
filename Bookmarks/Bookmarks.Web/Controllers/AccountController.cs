@@ -160,9 +160,9 @@ namespace Issues.Web.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    if (!Roles.RoleExists("Employee"))
-                        Roles.CreateRole("Employee");
-                    Roles.AddUserToRole(model.UserName, "Employee");
+                    if (!Roles.RoleExists("Admin"))
+                        Roles.CreateRole("Admin");
+                    Roles.AddUserToRole(model.UserName, "Admin");
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                    
                     return RedirectToAction("Index", "Home");
