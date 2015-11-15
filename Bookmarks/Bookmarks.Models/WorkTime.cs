@@ -17,7 +17,7 @@ namespace Issues.Models
         [ForeignKey("Issue")]
         public int IssueId { get; set; }
 
-        public Issue Issue { get; set; }
+        public virtual Issue Issue { get; set; }
 
         [Required]
         public double Time { get; set; }
