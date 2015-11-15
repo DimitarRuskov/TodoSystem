@@ -18,24 +18,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Issue tracking system", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Issue Tracking System", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                     <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Users", "Index", "Users")</li>
-                    <li>@Html.ActionLink("Tickets", "Index", "Tickets")</li>
-                    <li>@Html.ActionLink("Comments", "Index", "Comments")</li>
-                    <li>@Html.ActionLink("WorkTimes", "Index", "WorkTimes")</li>
+                    
+                    @*<li>@Html.ActionLink("Comments", "Index", "Comments")</li>
+                    <li>@Html.ActionLink("WorkTimes", "Index", "WorkTimes")</li>*@
 
                     @if (this.User.Identity.IsAuthenticated)
                     {
-                        
-
+                        <li>@Html.ActionLink("Issues", "Index", "Tickets")</li>
                     }
                     @if (this.User.IsInRole("Admin"))
                     {
-
+                        <li>@Html.ActionLink("Users", "Index", "Users")</li>
                     }
                 </ul>
                 @Html.Partial("_LoginPartial")
