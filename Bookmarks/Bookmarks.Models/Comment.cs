@@ -23,7 +23,7 @@ namespace Issues.Models
         public int IssueId { get; set; }
         public virtual Issue Issue{ get; set; }
 
-        [Display(Name = "Created Date")]
-        public DateTime DateCreated { get; set; }
+        [Display(Name = "Created At")]
+        public DateTime CreatedAt { get; set; }
     }
 }

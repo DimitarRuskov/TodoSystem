@@ -6,6 +6,7 @@
     using Issues.Models;
 
     using Issues.Common.Mappings;
+    using System;
 
     public class IssueDetailsViewModel : IMapFrom<Issue>, IHaveCustomMappings
     {
@@ -16,6 +17,12 @@
         public double Time { get; set; }
 
         public string Description { get; set; }
+
+        public User CreatedBy { get; set; }
+        public User AssignedTo { get; set; }
+        public DateTime CreatedAt { get; set; }
+        public DateTime UpdatedAt { get; set; }
+        public string Status { get; set; }
 
         public ICollection<CommentViewModel> Comments { get; set; }
 

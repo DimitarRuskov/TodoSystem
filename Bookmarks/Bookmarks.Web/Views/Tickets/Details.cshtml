@@ -11,19 +11,19 @@
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.AssignedTo.FirstName)
+            Assignee
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.AssignedTo.FirstName)
+            @Html.DisplayFor(model => model.AssignedTo.UserName)
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CreatedBy.FirstName)
+            Created By
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CreatedBy.FirstName)
+            @Html.DisplayFor(model => model.CreatedBy.UserName)
         </dd>
 
         <dt>
@@ -80,3 +80,36 @@
     @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
     @Html.ActionLink("Back to List", "Index")
 </p>
+
+Content: <input type="text" id="text" /> <input type="submit" value="Comment" class="btn btn-default" id="add-comment" data-id="@Model.Id" />
+
+@section scripts {
+    <script>
+
+        $('#add-comment').click(function () {
+            var id = $(this).data('id');
+            var content = $('#text').val();
+
+            $.post('/Comments/Comment', { id: id, content: content }, function (data) {
+                var commentDiv = $('<div class="comment">')
+                    .append($('<div class="comment-text">').text(data['Content']))
+                    .append($('<div class="comment-author">').text('created by: ' + data['User']));
+
+                $('#comments')
+                    .append(commentDiv);
+            });
+        });
+    </script>
+}
+
+<div id="comments">
+    <h4>Comments</h4>
+
+    @foreach (var comment in Model.Comments)
+    {
+        <div class="comment">
+            <div class="comment-text">@comment.Content</div>
+            <div class="comment-author">created by: @comment.User.UserName</div>
+        </div>
+    }
+</div>

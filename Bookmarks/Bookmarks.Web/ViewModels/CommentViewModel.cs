@@ -10,12 +10,12 @@
 
         public string Content { get; set; }
 
-        public string Username { get; set; }
+        public User User { get; set; }
 
         public void CreateMappings(AutoMapper.IConfiguration configuration)
         {
             configuration.CreateMap<Comment, CommentViewModel>()
-                .ForMember(m => m.Username, cfg => cfg.MapFrom(e => e.User.UserName));
+                .ForMember(m => m.User, cfg => cfg.MapFrom(e => e.User));
         }
     }
 }

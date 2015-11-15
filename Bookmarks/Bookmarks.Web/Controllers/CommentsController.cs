@@ -8,131 +8,36 @@ using System.Web;
 using System.Web.Mvc;
 using Issues.Data;
 using Issues.Models;
+using Microsoft.AspNet.Identity;
 
-namespace Bookmarks.Web.Controllers
+namespace Issues.Web.Controllers
 {
-    public class CommentsController : Controller
+    public class CommentsController : BaseController
     {
-        private IssuesDbContext db = new IssuesDbContext();
-
-        // GET: Comments
-        public ActionResult Index()
+        public CommentsController(IIssuesData data)
+            : base(data)
         {
-            var comments = db.Comments.Include(c => c.Issue).Include(c => c.User);
-            return View(comments.ToList());
         }
 
-        // GET: Comments/Details/5
-        public ActionResult Details(int? id)
+        public ActionResult Comment(int id, string content)
         {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Comment comment = db.Comments.Find(id);
-            if (comment == null)
-            {
-                return HttpNotFound();
-            }
-            return View(comment);
-        }
+            var issue = this.Data.Issues.All()
+                .FirstOrDefault(b => b.Id == id);
+            string userId = this.User.Identity.GetUserId();
+            var user = this.Data.Users.All()
+                .FirstOrDefault(u => u.Id == userId);
+            var date = DateTime.Now;
 
-        // GET: Comments/Create
-        public ActionResult Create()
-        {
-            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title");
-            ViewBag.UserId = new SelectList(db.Users, "Id", "FirstName");
-            //ViewBag.DateCreated = new SelectList(db.Comments, DateTime.Now);
-            return View();
-        }
-
-        // POST: Comments/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,Content,UserId,IssueId,DateCreated")] Comment comment)
-        {
-            if (ModelState.IsValid)
+            issue.Comments.Add(new Comment()
             {
-                db.Comments.Add(comment);
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
+                Content = content,
+                UserId = userId,
+                CreatedAt = date
+            });
 
-            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title", comment.IssueId);
-            ViewBag.UserId = new SelectList(db.Users, "Id", "FirstName", comment.UserId);
-            return View(comment);
-        }
+            this.Data.SaveChanges();
 
-        // GET: Comments/Edit/5
-        public ActionResult Edit(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Comment comment = db.Comments.Find(id);
-            if (comment == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title", comment.IssueId);
-            ViewBag.UserId = new SelectList(db.Users, "Id", "FirstName", comment.UserId);
-            return View(comment);
-        }
-
-        // POST: Comments/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,Content,UserId,IssueId,DateCreated")] Comment comment)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(comment).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            ViewBag.IssueId = new SelectList(db.Issues, "Id", "Title", comment.IssueId);
-            ViewBag.UserId = new SelectList(db.Users, "Id", "FirstName", comment.UserId);
-            return View(comment);
-        }
-
-        // GET: Comments/Delete/5
-        public ActionResult Delete(int? id)
-        {
-            if (id == null)
-            {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-            }
-            Comment comment = db.Comments.Find(id);
-            if (comment == null)
-            {
-                return HttpNotFound();
-            }
-            return View(comment);
-        }
-
-        // POST: Comments/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
-        {
-            Comment comment = db.Comments.Find(id);
-            db.Comments.Remove(comment);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-        }
-
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
+            return this.Json(new { Content = content, User = user.UserName, CreatedAt = date }, JsonRequestBehavior.AllowGet);
         }
     }
 }
