@@ -8,3 +8,13 @@ C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\Au
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.csprojResolveAssemblyReference.cache
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.dll
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\Issues.Common.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\Issues.Common.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\AutoMapper.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\AutoMapper.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\AutoMapper.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\obj\Debug\Issues.Common.csprojResolveAssemblyReference.cache
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\obj\Debug\Issues.Common.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Common\obj\Debug\Issues.Common.pdb

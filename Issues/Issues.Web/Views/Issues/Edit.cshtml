@@ -61,11 +61,11 @@
             <div class="col-md-10">
                 @Html.DropDownList("Status", new List<SelectListItem>
                             {
-                              new SelectListItem{ Text = "Open"},
-                              new SelectListItem{ Text = "Waiting" },
-                              new SelectListItem{ Text = "Progress" },
-                              new SelectListItem{ Text = "Complete" }
-                            }, new { onchange = "getAlldata()", @class = "form-control" })
+                              new SelectListItem{ Text = "New"},
+                              new SelectListItem{ Text = "In Progress" },
+                              new SelectListItem{ Text = "For Test" },
+                              new SelectListItem{ Text = "Completed" }
+                            }, new { onchange = "openCommentForm()", @class = "form-control" })
                 @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
             </div>
         </div>

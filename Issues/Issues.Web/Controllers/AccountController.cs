@@ -13,6 +13,7 @@ using Issues.Web.Models;
 namespace Issues.Web.Controllers
 {
     using Issues.Models;
+    using Microsoft.AspNet.Identity.EntityFramework;
     using System.Web.Security;
 
     [Authorize]
@@ -160,10 +161,20 @@ namespace Issues.Web.Controllers
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
-                    if (!Roles.RoleExists("Admin"))
-                        Roles.CreateRole("Admin");
-                    if(!Roles.IsUserInRole(model.UserName, "Admin"))
-                        Roles.AddUserToRole(model.UserName, "Admin");
+                    var dbContext = new Issues.Data.IssuesDbContext();
+                    var role = user.UserName == "root" ? "Admin" : "Regular";
+                    var newRole = dbContext.Roles.FirstOrDefault(r => r.Name == role);
+                    if(newRole == null)
+                    {
+                        newRole = new IdentityRole(role);
+                        dbContext.Roles.Add(newRole);
+                        dbContext.SaveChanges();
+                    }
+                    var identityUserRole = new IdentityUserRole();
+                    identityUserRole.UserId = user.Id;
+                    identityUserRole.RoleId = newRole.Id;
+                    newRole.Users.Add(identityUserRole);
+                    dbContext.SaveChanges();
                     await SignInManager.SignInAsync(user, isPersistent:false, rememberBrowser:false);
                    
                     return RedirectToAction("Index", "Home");

@@ -12,3 +12,17 @@ C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Models\bin\Debug\Mi
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Models\obj\Debug\Issues.Models.csprojResolveAssemblyReference.cache
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Models\obj\Debug\Issues.Models.dll
 C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Models\obj\Debug\Issues.Models.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.dll.config
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.pdb
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.csprojResolveAssemblyReference.cache
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.dll
+C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.pdb
