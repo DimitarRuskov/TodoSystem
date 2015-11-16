@@ -1,0 +1,10 @@
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\AutoMapper.Net4.dll
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\Issues.Common.dll
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\Issues.Common.pdb
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\AutoMapper.dll
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\AutoMapper.pdb
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\AutoMapper.xml
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\bin\Debug\AutoMapper.Net4.pdb
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.csprojResolveAssemblyReference.cache
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.dll
+C:\Users\George\Documents\GitHub\TodoSystem\Bookmarks\Issues.Common\obj\Debug\Issues.Common.pdb
