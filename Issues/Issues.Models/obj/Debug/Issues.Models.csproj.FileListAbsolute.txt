@@ -26,3 +26,16 @@ C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\bin\Debu
 C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.csprojResolveAssemblyReference.cache
 C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.dll
 C:\Users\Einstein\Desktop\Workspace\ASP\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.pdb
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.dll.config
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Issues.Models.pdb
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.dll
+C:\Users\georg\Documents\GitHub\TodoSystem\Issues\Issues.Models\obj\Debug\Issues.Models.pdb
